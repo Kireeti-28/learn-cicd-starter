@@ -117,5 +117,6 @@ func addParseTimeParam(input string) (string, error) {
 	u.RawQuery = q.Encode()
 	returnUrl := u.String()
 	returnUrl = strings.TrimPrefix(returnUrl, dummyScheme)
+	
 	return returnUrl, nil
 }
